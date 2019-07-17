@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  width: 100%;
+
+  header {
+    background-image: linear-gradient(rgb(19, 19, 83), rgb(19, 19, 83), black);
+    height: 120px;
+    color: white;
+    line-height: 40px;
+    border-top: 1px solid rgb(19, 19, 83);
+  }
+
+  .img-block {
+    background: black;
+    color: white;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 20px;
+
+    button {
+      margin: 0px 20px 20px 20px;
+      background: rgb(61, 61, 61);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      height: 40px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    a {
+      img {
+        border: 4px ridge gray;
+        border-radius: 10px;
+        padding: 20px;
+      }
+    }
+
+    .hd-click {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    .explanation {
+      width: 60%;
+      margin-left: 20%;
+    }
+  }
+
+  footer {
+    background-image: linear-gradient(black, rgb(19, 19, 83), rgb(19, 19, 83));
+    height: 120px;
+    line-height: 140px;
+
+    button {
+      background: rgb(126, 126, 126);
+      border: none;
+      width: 200px;
+      height: 40px;
+      border-radius: 5px;
+      margin: 40px;
+      color: black;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

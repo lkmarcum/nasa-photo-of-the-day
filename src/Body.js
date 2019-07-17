@@ -19,9 +19,14 @@ function Body() {
   }, [refresh]);
 
   return (
-    <div className="img-container">
+    <div className="img-block">
       <button onClick={() => setRefresh(refresh + 1)}>NEW IMAGE</button>
-      <Image imgUrl={photo.url} />
+
+      <a href={photo.hdurl}>
+        <Image imgUrl={photo.url} />
+      </a>
+      <p className="hd-click">Click to view in HD</p>
+
       <h2>{photo.title}</h2>
       <h3>Date: {photo.date}</h3>
       <p className="explanation">{photo.explanation}</p>
