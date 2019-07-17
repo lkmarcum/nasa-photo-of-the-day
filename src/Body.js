@@ -22,6 +22,9 @@ function Body() {
     <div className="img-container">
       <button onClick={() => setRefresh(refresh + 1)}>NEW IMAGE</button>
       <Image imgUrl={photo.url} />
+      <h2>{photo.title}</h2>
+      <h3>Date: {photo.date}</h3>
+      <p className="explanation">{photo.explanation}</p>
     </div>
   );
 }
