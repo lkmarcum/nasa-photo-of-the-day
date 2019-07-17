@@ -25,7 +25,7 @@ function Body() {
       <a href={photo.hdurl}>
         <Image imgUrl={photo.url} />
       </a>
-      <p className="hd-click">Click to view in HD</p>
+      <p className="hd-click">Click image to view in HD</p>
 
       <h2>{photo.title}</h2>
       <h3>Date: {photo.date}</h3>
