@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
   height: 120px;
   width: 100%;
   color: white;
-  line-height: 40px;
+  line-height: 60px;
   border-top: 1px solid rgb(19, 19, 83);
 `;
 
