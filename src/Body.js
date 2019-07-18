@@ -3,7 +3,7 @@ import axios from "axios";
 import Image from "./Image";
 // import ButtonAnimated from "./Button";
 import { Button } from "./Button";
-import { Container, Divider } from "semantic-ui-react";
+import { Container, Icon } from "semantic-ui-react";
 
 function Body() {
   const [photo, setPhoto] = useState([]);
@@ -25,14 +25,17 @@ function Body() {
     <div className="img-block">
       {/* <button onClick={() => setRefresh(refresh + 1)}>NEW IMAGE</button> */}
       {/* <ButtonAnimated onClick={() => setRefresh(refresh + 1)} /> */}
-      <Button onClick={() => setRefresh(refresh + 1)}>NEW IMAGE</Button>
+      <Button onClick={() => setRefresh(refresh + 1)}>
+        <Icon color="red" name="sync" />
+        NEW IMAGE
+      </Button>
 
       <a href={photo.hdurl}>
         <Image imgUrl={photo.url} hdUrl={photo.hdurl} />
       </a>
 
       <p className="hd-click">Click image to view in HD</p>
-      <Container textAlign="justified">
+      <Container textAlign="left">
         <h2>{photo.title}</h2>
         <h3>Date: {photo.date}</h3>
 
