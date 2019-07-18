@@ -3,6 +3,7 @@ import axios from "axios";
 import Image from "./Image";
 // import ButtonAnimated from "./Button";
 import { Button } from "./Button";
+import { Container, Divider } from "semantic-ui-react";
 
 function Body() {
   const [photo, setPhoto] = useState([]);
@@ -31,10 +32,12 @@ function Body() {
       </a>
 
       <p className="hd-click">Click image to view in HD</p>
+      <Container textAlign="justified">
+        <h2>{photo.title}</h2>
+        <h3>Date: {photo.date}</h3>
 
-      <h2>{photo.title}</h2>
-      <h3>Date: {photo.date}</h3>
-      <p className="explanation">{photo.explanation}</p>
+        <p className="explanation">{photo.explanation}</p>
+      </Container>
     </div>
   );
 }
