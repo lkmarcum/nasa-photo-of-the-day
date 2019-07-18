@@ -1,6 +1,6 @@
 import React from "react";
 
-function Image({ imgUrl }) {
+function Image({ imgUrl, hdUrl }) {
   return (
     <div className="nasa-img">
       <img src={imgUrl} alt="space" />

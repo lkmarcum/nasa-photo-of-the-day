@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "./Image";
+// import ButtonAnimated from "./Button";
+import { Button } from "./Button";
 
 function Body() {
   const [photo, setPhoto] = useState([]);
@@ -20,11 +22,14 @@ function Body() {
 
   return (
     <div className="img-block">
-      <button onClick={() => setRefresh(refresh + 1)}>NEW IMAGE</button>
+      {/* <button onClick={() => setRefresh(refresh + 1)}>NEW IMAGE</button> */}
+      {/* <ButtonAnimated onClick={() => setRefresh(refresh + 1)} /> */}
+      <Button onClick={() => setRefresh(refresh + 1)}>NEW IMAGE</Button>
 
       <a href={photo.hdurl}>
-        <Image imgUrl={photo.url} />
+        <Image imgUrl={photo.url} hdUrl={photo.hdurl} />
       </a>
+
       <p className="hd-click">Click image to view in HD</p>
 
       <h2>{photo.title}</h2>

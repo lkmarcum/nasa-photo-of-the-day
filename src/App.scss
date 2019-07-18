@@ -17,19 +17,19 @@
     border-bottom: 1px solid black;
     width: 100%;
 
-    button {
-      margin: 20px 20px 20px 20px;
-      background: rgb(61, 61, 61);
-      color: white;
-      border: none;
-      border-radius: 5px;
-      width: 200px;
-      height: 40px;
-      box-shadow: 0px 2px 2px rgb(197, 197, 197);
-      &:hover {
-        cursor: pointer;
-      }
-    }
+    // button {
+    //   margin: 20px 20px 20px 20px;
+    //   background: rgb(61, 61, 61);
+    //   color: white;
+    //   border: none;
+    //   border-radius: 5px;
+    //   width: 200px;
+    //   height: 40px;
+    //   box-shadow: 0px 2px 2px rgb(197, 197, 197);
+    //   &:hover {
+    //     cursor: pointer;
+    //   }
+    // }
     a {
       img {
         border: 4px ridge gray;
