@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  width: 100%;
+
+  header {
+    // background-image: linear-gradient(rgb(19, 19, 83), rgb(19, 19, 83), black);
+    // height: 120px;
+    // width: 100%;
+    // color: white;
+    // line-height: 40px;
+    // border-top: 1px solid rgb(19, 19, 83);
+    h1 {
+      padding: 20px;
+    }
+  }
+
+  .img-block {
+    background: black;
+    color: white;
+    border-bottom: 1px solid black;
+    width: 100%;
+
+    // button {
+    //   margin: 20px 20px 20px 20px;
+    //   background: rgb(61, 61, 61);
+    //   color: white;
+    //   border: none;
+    //   border-radius: 5px;
+    //   width: 200px;
+    //   height: 40px;
+    //   box-shadow: 0px 2px 2px rgb(197, 197, 197);
+    //   &:hover {
+    //     cursor: pointer;
+    //   }
+    // }
+    a {
+      img {
+        border: 4px ridge gray;
+        border-radius: 10px;
+        padding: 20px;
+        background: rgb(10, 10, 10);
+      }
+    }
+
+    .hd-click {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    .explanation {
+      width: 60%;
+      margin-left: 20%;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      // border-top: 2px solid gray;
+    }
+  }
+
+  footer {
+    // background-image: linear-gradient(black, rgb(19, 19, 83), rgb(19, 19, 83));
+    // height: 120px;
+    // line-height: 140px;
+    // width: 100%;
+
+    button {
+      background: rgb(126, 126, 126);
+      border: none;
+      width: 200px;
+      height: 40px;
+      border-radius: 5px;
+      margin: 40px;
+      color: black;
+      box-shadow: 0px 2px 2px rgb(192, 192, 192);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
